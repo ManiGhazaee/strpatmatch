@@ -12,6 +12,7 @@ pub mod tuples {
     }
 }
 
+#[inline(always)]
 pub fn first_match_start(haystack: &str, needle: &str) -> Option<usize> {
     for i in 0..haystack.len() {
         if haystack[i..haystack.len()].starts_with(needle) {
