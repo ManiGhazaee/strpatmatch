@@ -1,0 +1,7 @@
+[package]
+name = "strpatmatch"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tupleops = "0.1.1"
