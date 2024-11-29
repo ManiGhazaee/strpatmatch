@@ -1,5 +1,14 @@
 #[macro_export]
 macro_rules! match_str {
+    ($string:expr, $str:literal) => {
+        {
+            if $string == $str {
+                Some(())
+            } else {
+                None
+            }
+        }
+    };
     ($string:expr, {}) => {
         {
             Some(&$string[..])

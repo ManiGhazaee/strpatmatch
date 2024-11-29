@@ -4,10 +4,13 @@ use strpatmatch::match_str;
 
 #[test]
 fn test_match_str() {
+    assert_eq!(Some(()), match_str!("", ""));
     assert_eq!(Some(""), match_str!("", {}));
     assert_eq!(Some(""), match_str!("", "" {}));
     assert_eq!(Some(""), match_str!("", {} ""));
     assert_eq!(Some(""), match_str!("", {} ""));
+    assert_eq!(Some(()), match_str!("x", "x"));
+    assert_eq!(None, match_str!("x", "y"));
     assert_eq!(Some(""), match_str!("x", "x" {}));
     assert_eq!(Some(""), match_str!("x", {} "x"));
     assert_eq!(Some(("", "")), match_str!("x", {} "x" {}));
