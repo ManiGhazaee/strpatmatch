@@ -2,6 +2,12 @@
 name = "strpatmatch"
 version = "0.1.0"
 edition = "2021"
+repository = "https://github.com/ManiGhazaee/strpatmatch"
+authors = ["ManiGhazaee <hosseinghazaee1@gmail.com>"]
+description = "Simple string pattern matching"
+readme = "README.md"
+license = "MIT"
+keywords = ["str", "pattern", "match", "string", "matching"]
 
 [dependencies]
 tupleops = "0.1.1"
